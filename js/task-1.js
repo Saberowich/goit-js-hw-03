@@ -1,8 +1,8 @@
 function slugify(title){
   const titleToLower = title.toLowerCase();
   const array = titleToLower.split(" ");
-  const slug = array.join("-");
-  return slug;
+  // const slug = array.join("-"); я не знаю, чи треба в завданні окремо створювати змінну slug і її виводити, тому ось вона закоментована
+  return array.join("-");
 }
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
